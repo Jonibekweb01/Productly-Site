@@ -1,0 +1,417 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/poppins-v19-latin-regular.woff2') format('woff2'),
+         url('../fonts/poppins-v19-latin-regular.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/poppins-v19-latin-600.woff2') format('woff2'),
+         url('../fonts/poppins-v19-latin-600.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/poppins-v19-latin-700.woff2') format('woff2'),
+         url('../fonts/poppins-v19-latin-700.woff') format('woff');
+  }
+
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+header {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 1240px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 20px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.inner-list, .inner-right-list {
+     display: flex;
+     list-style: none;
+}
+
+.inner-list-item {
+    text-decoration: none;
+    margin-right: 17px;
+}
+
+.inner-list-item:nth-child(4) {
+    margin-right: 0;
+}
+
+.inner-right-list-item {
+    text-decoration: none;
+    margin-right: 17px;
+}   
+
+.inner-list-item-link, .inner-right-list-item-in, .inner-right-list-item-up {
+    text-decoration: none;
+}
+
+.inner-list-item-link {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #2F281E;
+    transition: 0.2s;
+}
+
+.inner-list-item-link:hover {
+    color: #FF9900;
+}
+
+
+.inner-right-list-item-in, .inner-right-list-item-up {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #173A56;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    padding: 12px 22px 12px 22px;
+    transition: 0.2s;
+}
+
+.inner-right-list-item-in:hover {
+    background: #FF9900;
+}
+
+.inner-right-list-item-up {
+    background: #FF9900;
+    border: 1px solid #FF9900;
+}
+
+.inner-right-list-item-up:hover {
+    text-align: center;
+    color: #173A56;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    padding: 12px 22px 12px 22px;
+    background-color: white;
+}
+
+/* header tugadi */
+
+.holder {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.holder-left-box {
+    width: 550px;
+}
+
+.holder-left-box-title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    color: #2F281E;
+    margin-bottom: 30px;
+}
+
+.holder-left-box-text {
+    margin-bottom: 45px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #2F281E;
+}
+
+.holder-left-box-links-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    text-decoration: none;
+    background: #FF9900;
+    border-radius: 4px;
+    padding: 12px 22px 12px 22px;
+    margin-right: 44px;
+    transition: 0.1s;
+    border: 1px solid #FF9900;
+}
+
+.holder-left-box-links-linked {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #FF9900;
+}
+
+
+/* holder-qismi-tugadi */
+
+.content {
+    background-image: url("../images/Bg.png");
+    background-repeat: no-repeat;
+    background-size: 1197px 277px;
+    background-position: calc(50% - 0px) calc(250px);
+    padding-bottom: 125px;
+}
+
+.content-top-box {
+    width: 462px;
+    margin: 0 auto 70px;
+}
+
+.content-top-box-title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: #2F281E;
+}
+
+.content-center-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.content-center-list-item {
+    width: 242px;
+    padding: 0 18px 0 0;
+    margin-right: 70px;
+    padding: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.content-center-list-item:hover {
+    background-color: #ff967731;
+    opacity: 0.9;
+    padding: 20px;
+    border-radius: 0px 180px 0px 0px
+}
+
+.content-center-list-item:nth-child(4) {
+    margin-right: 0;
+}
+
+.content-center-list-item-info-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: #2F281E;
+    transition: 0.3s;
+}
+
+
+.content-center-list-item-info-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+    transition: 0.3s;
+}
+
+
+
+.content-bottom {
+    text-align: center;
+}
+
+.content-bottom-link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #FF7549;
+    border-radius: 4px;
+    padding: 10px 25px;
+    transition: 0.2s;
+}
+
+.content-bottom-link:hover {
+    color: #FF7549;
+    background-color: #fff;
+}
+
+/* content bolimi tugadi */
+
+.wrapper-top {
+    margin-bottom: 31px;
+}
+
+.wrapper-titles {
+    margin-bottom: 24px;
+}
+
+.wrapper-title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    color: #2F281E;
+}
+
+.wrapper-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+}
+
+.wrapper-list {
+    list-style: none;
+    display: flex;
+}
+
+.wrapper-list-item {
+    font-weight: 400;
+    font-size: 13px;
+    padding: 2px 14px;
+    border: 1px solid #d7d7d7;
+    background: #fff;
+    border-radius: 90px;
+    margin-right: 7px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.wrapper-list-item:nth-child(1) {
+    padding: 2px 14px;
+    background: #FF9900;
+    border: none;
+    border-radius: 90px;
+}
+
+.wrapper-list-item:hover  {
+    background: #FF9900;
+    border-radius: 90px;
+}
+
+.wrapper-list-item:nth-child(4) {
+    margin-right: 0;
+}
+
+.wrapper-center-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.wrapper-center-list-item {
+    width: 377px;
+    border-radius: 10px;
+    margin-right: 34px;
+    transition: 0.2s;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.wrapper-center-list-item:nth-child(3) {
+    margin-right: 0;
+    color: #FF9900;
+}
+
+.wrapper-center-list-item:nth-child(4) {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;   
+}
+
+.wrapper-center-list-item:nth-child(5) {
+    margin-right: 0;
+}
+
+
+.wrapper-center-list-item:hover {
+    box-shadow: 0px 4px 20px #FF7549;
+    cursor: pointer;
+}
+
+.wrapper-center-list-item:nth-child(3):hover {
+    box-shadow: 0px 4px 20px #FF7549;
+}
+
+.wrapper-center-list-item-info {
+    padding: 25px 33px;
+}
+
+.wrapper-center-list-item-info-title {
+    margin-bottom: 29px;
+}
+
+.wrapper-center-info-list {
+    display: flex;
+    list-style: none;
+}
+
+.wrapper-center-info-list-item {
+    margin-right: 5px;
+    background: #F5F5F5;
+    border-radius: 90px;
+    padding: 2px 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.wrapper-center-info-list-item-span {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 28px;
+    color: #544837;
+}
+
+.wrapper-center-info-list-item:hover {
+    color: #F5F5F5;
+    background-color: #FF9900;
+}
+
+/* wrapper qismi tugadi */
+
+
+/* footer */
+
+
+
